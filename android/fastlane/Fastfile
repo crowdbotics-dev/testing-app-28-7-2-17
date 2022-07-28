@@ -102,7 +102,7 @@ platform(:android) do
     add_git_tag(build_number: ENV["CIRCLE_BUILD_NUM"].to_i)
 
     # Push the new commit and tag back to your git remote
-    push_git_tags
+    push_to_git_remote
   end
 
   # Update app URL in CB app DB
